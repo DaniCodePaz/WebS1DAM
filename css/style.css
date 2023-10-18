@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+/* For desktop: */
+.container {
+    width: 99%;
+    margin: 0 auto;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 15%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px rgb(184, 167, 167);
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.img-shadow {
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    nav ul {
+        background-color: rgb(231, 219, 219);
+    }
+}
+
+nav li a {
+    color: rgb(0, 0, 0);
+}
+
+nav li:hover {
+    background-color: rgb(110, 104, 104);
+}
+
+.text-right {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+    color: white;
+}
+
+.py-3 {
+    padding: 16px 0;
+}
+
+.px-3 {
+    padding: 10px 16px;
+}
+
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(34, 30, 30);
+}
+
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+
+.text-white {
+    color: white;
+}
+
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+        justify-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+    #menu {
+        display: block;
+    }
+}
+
+#home {
+    text-align: center;
+}
+
+#enlaces {
+    text-align: center;
+}
+
+.btns a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#listas h2 {
+    text-decoration: underline;
+}
+
+#listaoc ol {
+    list-style-type: upper-alpha;
+}
+
+#listaoc ol ol {
+    list-style-type: upper-roman;
+}
+
+#listaotc ol {
+    list-style-type: lower-alpha;
+}
+
+#listaotc ol ol {
+    list-style-type: lower-roman;
+}
+
+#listaotc ol ol ol {
+    list-style-type: upper-roman;
+}
+
+#listadtc ul ul {
+    list-style-image: url(../img/estrella2.png);
+}
+
+#listadtc ul ul ul {
+    list-style-image: none;
+    list-style-type: square;
+}
+
+dt {
+    background-color: rgb(189, 51, 51);
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+
+dd {
+    padding: 10px 0;
+}
+
+.table {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.table th {
+    color: white;
+}
+
+.table td {
+    color: black;
+}
+
+.fondo_lm {
+    background-color: #f7cbc9;
+}
+
+.fondo_ing {
+    background-color: #7bb1eb;
+}
+
+.fondo_prog {
+    background-color: #b37c7a;
+}
+
+.fondo_fol {
+    background-color: #837fbb;
+}
+
+.fondo_bdd {
+    background-color: #d4d1fb;
+}
+
+.fondo_ende {
+    background-color: #b2b46f;
+    ;
+}
+
+.fondo_sisi {
+    background-color: #a2db9d;
+}
+
+.tabla {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla th {
+    background: #08003f;
+    color: white;
+    padding: 5px 0;
+}
+
+.tabla td {
+    padding: 5px 55px;
+    background: #ffffff;
+    color: black;
+}
+
+.tabla2 {
+    text-align: center;
+    background: white;
+}
+
+.tabla2 td {
+    color: black;
+}
+
+.tabla2 th {
+    color: black;
+}
+
+.tablacomb td {
+    background: white;
+    color: black;
+}
+
+.tablacomb th {
+    background: white;
+    color: black;
+}
+
+.tabla3 th {
+    background-color: #7fffd4;
+    color: black;
+}
+
+.tabla3 tr:nth-child(odd) td {
+    background-color: #7fffd4;
+    color: black;
+}
+
+.tabla3 tr:nth-child(even) td {
+    background-color: #d0dbf8;
+    color: black;
+}
+
+form.form-login {
+    width: 40%;
+    padding: 0 40px;
+}
+
+form.form-registro {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.fieldset1 {
+    background-color: #2b2929;
+}
+
+.btn {
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.btn-blue {
+    background-color: #b2b6b8;
+    color: white;
+}
+
+.form-login input {
+    color: black;
+}
+
+.form-registro fieldset {
+    background-color: #2b2929;
+}
+
+.form-registro input {
+    color: black;
+}
+
+.form-registro select {
+    color: black;
+}
+
+.form-registro textarea {
+    color: black;
+}
+
+form.form-htm15 {
+    width: 40%;
+    padding: 0 40px;
+}
+
+form.form-htm15 legend {
+    background-color: #0a0346;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+}
+
+form.form-htm15 fieldset {
+    padding: 0 30px;
+    background-color: #2b2929;
+}
+
+form.form-htm15 label {
+    background-color: #333131;
+    color: rgb(255, 255, 255);
+}
+
+.btn-red {
+    background-color: #bdb5b5;
+    color: rgb(0, 0, 0);
+}
+
+.video1 {
+    display: block;
+    border-width: 6px;
+    border-style: groove;
+    border-color: #221e1e;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-width: 6px;
+    border-style: groove;
+    border-color: #221e1e;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
