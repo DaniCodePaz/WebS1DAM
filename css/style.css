@@ -402,6 +402,15 @@ form.form-registro {
     color: white;
 }
 
+form.form-htm15 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-login input {
     color: black;
 }
@@ -420,11 +429,6 @@ form.form-registro {
 
 .form-registro textarea {
     color: black;
-}
-
-form.form-htm15 {
-    width: 40%;
-    padding: 0 40px;
 }
 
 form.form-htm15 legend {
